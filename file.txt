@@ -1,0 +1,1 @@
+mongodb+srv://mdsajjadali83255:Sajjad@17@cluster0.pdh7bca.mongodb.net/authentication?retryWrites=true&w=majority
