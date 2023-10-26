@@ -5,6 +5,7 @@ const cookie = require('cookie');
 const router = express.Router();
 require('../db/connectDB');
 const User = require('../model/userSchema');
+const authenticate = require('../middleware/Authenticate');
 
 
 router.get('/', (req,res) => {
@@ -112,5 +113,9 @@ router.post('/signin', async(req,res) => {
 
 });
 
+router.get('/about', authenticate, (req, res) => {
+    console.log("My about data");
+    res.send(req.rootUser);
+});
 
 module.exports = router;
