@@ -117,7 +117,7 @@ const Signup = () => {
 
             <div className='signup-image'>
               <figure>
-                <img src={signpic} alt='signup image'/>
+                <img src={signpic} alt='signup'/>
               </figure>
               <NavLink to='/login' className='signup-image-link'>
                 I am Already Registered
